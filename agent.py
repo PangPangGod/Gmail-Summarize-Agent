@@ -62,15 +62,15 @@ class GmailLangChainAgent:
     def _build_executor(self):
         """Build the LangChain agent executor."""
         from langchain.agents import AgentExecutor
-        return AgentExecutor(agent=self.agent, tools=self.toolkit.get_tools(), verbose=True)
+        return AgentExecutor(agent=self.agent, tools=self.toolkit.get_tools())
 
     def run(self, prompt):
         """Execute the agent with the given prompt."""
         return self.agent_executor.invoke(prompt)
 
-# Usage example
-if __name__ == "__main__":
-    gmail_langchain_agent = GmailLangChainAgent()
-    prompt = {"input": "`search_gmail` with `{'query': 'from':'Medium Daily Digest', 'max_results': 1}`.  Get Most recent matching mail with id ONLY. return must be like 'the matching mail id is:'"}
-    search_result = gmail_langchain_agent.run(prompt)
-    print(search_result)
+# # Usage example
+# if __name__ == "__main__":
+#     gmail_langchain_agent = GmailLangChainAgent()
+#     prompt = {"input": "`search_gmail` with `{'query': 'from':'Medium Daily Digest', 'max_results': 1}`.  Get Most recent matching mail with id ONLY. return must be like 'the matching mail id is:'"}
+#     search_result = gmail_langchain_agent.run(prompt)
+#     print(search_result)

@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 def get_message_from_id(service, user_id, message_id):
     try:
         message = service.users().messages().get(userId=user_id, id=message_id, format='raw').execute()
-        print('Message snippet: %s' % message['snippet'])
+        # print('Message snippet: %s' % message['snippet'])
 
         msg_str = base64.urlsafe_b64decode(message['raw'].encode('ASCII'))
         mime_msg = email.message_from_bytes(msg_str)
