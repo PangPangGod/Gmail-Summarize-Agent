@@ -11,7 +11,7 @@ from langchain.agents import create_openai_functions_agent, AgentExecutor
 
 from config import SCOPES
 
-def create_credentials(scopes, token_file='token.json', credentials_file='credentials.json'):
+def create_credentials(scopes=SCOPES, token_file='token.json', credentials_file='credentials.json'):
     """Create or load Google API credentials."""
     if os.path.exists(token_file):
         creds = Credentials.from_authorized_user_file(token_file, scopes)
@@ -33,7 +33,7 @@ class GmailLangChainAgent:
     """A Gmail agent integrated with LangChain for processing and executing Gmail-related tasks."""
 
     def __init__(self, model="gpt-3.5-turbo-0125", temperature=0, streaming=True, max_tokens=2048):
-        self.creds = create_credentials(SCOPES)
+        self.creds = create_credentials()
         self.toolkit = self._set_default_toolkit()
         self.model = self._initialize_model(model, temperature, streaming, max_tokens)
         self.agent = self._create_agent()
@@ -42,7 +42,7 @@ class GmailLangChainAgent:
     def _set_default_toolkit(self):
         """Set the default LangChain GmailToolkit."""
         from langchain_community.tools.gmail.utils import build_resource_service
-        return GmailToolkit(api_resource=self.api_resource)
+        return GmailToolkit(api_resource=build_resource_service(credentials=self.creds))
 
     def _initialize_model(self, model, temperature, streaming, max_tokens):
         """Initialize the ChatOpenAI model."""
@@ -71,6 +71,6 @@ class GmailLangChainAgent:
 # Usage example
 if __name__ == "__main__":
     gmail_langchain_agent = GmailLangChainAgent()
-    prompt = {"input": "`search_gmail` with `{'query': 'from':'Medium Daily Digest', 'max_results': 1}`. Return Most recent matching mail with id ONLY."}
+    prompt = {"input": "`search_gmail` with `{'query': 'from':'Medium Daily Digest', 'max_results': 1}`.  Get Most recent matching mail with id ONLY. return must be like 'the matching mail id is:'"}
     search_result = gmail_langchain_agent.run(prompt)
     print(search_result)
