@@ -1,4 +1,4 @@
-### idea
+### IDEA
 GMAIL을 이용한 Multiple Agent side project
 1. Gmail Agent를 통한 내용 검색(Langchain Gmail Toolkit 이용 -> 특정 내용 Query, Filtering)
 2. 파싱을 통해 가져온 내용 Prettify(*request를 통해 내용 요약하기)
