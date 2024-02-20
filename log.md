@@ -1,4 +1,4 @@
-## Here is your Today's Daily LLM Digest!: 2024-02-18
+## Here is your Today's Daily LLM Digest! : 2024-02-18
 
 1. [How to Process PDFs in Python: A Step-by-Step GuideIntroduction:](https://medium.com/@jackatunstructured/how-to-process-pdfs-in-python-a-step-by-step-guide-d0532f795afe)
 
@@ -16,4 +16,19 @@
 
 8. [Creating Intelligent Agents with AutoGen Studio: A Beginner’s Guide to AI Agent…Introduction](https://medium.com/@navarai/creating-intelligent-agents-with-autogen-studio-a-beginners-guide-to-ai-agent-development-d80abc34662d)
 
+ ## Here is your Today's Daily LLM Digest! : 2024-02-20
+
+1. [Agent for MongoDB | LangchainOpenAI has made its API available for exploration, allowing users to tailor it to their specific needs. In…](https://medium.com/@omershahzad/agent-for-mongodb-langchain-ccf69913a11a)
+
+2. [I Failed as a Lead Developer. What I’ve Learned?Navigating the Transition: Lessons Learned on the Journey from Senior Developer to Lead Developer](https://medium.com/@tomas-svojanovsky/i-failed-as-a-lead-developer-what-ive-learned-7bf66cb0d075)
+
+3. [Optimal Microdosing: My Top 3 Substances and Their PurposesMy AI-self Microdosing, created by author with hotpot.ai](https://medium.com/@alinapitt/optimal-microdosing-my-top-3-substances-and-their-purposes-6b7aa8108c61)
+
+4. [I Tried Making Money with an AI WebsiteHere’s what happened!](https://medium.com/@artturi-jalli/i-tried-making-money-with-an-ai-website-82d89b8f5294)
+
+5. [Express.js Got Flooded With Pull Requests. An Idea To Ban India Strongly…Open source is a quite calm place on the internet. Rarely anything exciting happens there. Except releases…](https://medium.com/@tomaszs2/express-js-got-flooded-with-pull-requests-an-idea-to-ban-india-strongly-rejected-96a9ec554661)
+
+6. [Boring Communicators Can Teach Us a Lot About Public SpeakingCringeworthy presenters taught me that analogies can break if stretched too far and audiences need something…](https://medium.com/@bobby-powers/boring-communicators-can-teach-us-a-lot-about-public-speaking-ec4468944126)
+
+7. [Building Production-Ready RAG Applications: An AI Solution Architect’s GuideRetrieval Augmented Generation (RAG) is an advanced artificial intelligence technique that combines…](https://medium.com/@nilayparikh/building-production-ready-rag-applications-an-ai-solution-architects-guide-790e02607584)
 

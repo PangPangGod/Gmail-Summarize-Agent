@@ -37,7 +37,7 @@ if url_dict:
 
 ### print as markdown syntex(save as .bat compatibility)
 today = date.today()
-result_format = f"## Here is your Today's Daily LLM Digest!: {today}\n\n"
+result_format = f"___\n\n ## Here is your Today's Daily LLM Digest! : {today}\n\n"
 for idx, content in enumerate(running_result.url_text_pairs, 1):
     result_format += f"{idx}. [{content.description}]({content.url})\n\n"
 
